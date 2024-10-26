@@ -1,0 +1,12 @@
+{
+  "editor.tabSize": 2,
+  "tailwindCSS.experimental.classRegex": [
+    "tw`([^`]*)",
+    "tw\\(([^)]*)\\)",
+    "tw\\.\\w+`([^`]*)",
+    "tw\\(\\w+\\)`([^`]*)"
+  ],
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 80,
+  "editor.wrappingIndent": "indent"
+}

@@ -23,7 +23,9 @@ module.exports = {
 
   // Base config
   extends: ["eslint:recommended"],
-
+  rules: {
+    'indent': ['error', 4]
+  },
   overrides: [
     // React
     {
@@ -80,5 +82,6 @@ module.exports = {
         node: true,
       },
     },
+    rules
   ],
 };

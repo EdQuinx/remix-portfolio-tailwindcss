@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+:root {
+    --primary-color: #FF651C;
+    --dark-color: #373737;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+.ed-nav-item {
+    @apply px-1 py-[2px] hover:text-[var(--primary-color)] relative after:absolute after:bottom-0 after:left-0 after:bg-[var(--primary-color)] after:h-0.5 after:w-0 hover:after:w-full transition-all after:ease-in-out after:duration-300; 
+}
+
+.ed-nav-li-item {
+    @apply border-b-[0.5px] hover:text-[var(--primary-color)] cursor-pointer;
 }
