@@ -10,7 +10,7 @@ const NavItems = [
   { id: 5, href: "/portfolio", text: "Portfolio" },
 ]
 
-const Header = () => {
+const HeaderComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -53,4 +53,4 @@ const Header = () => {
     </header>)
 }
 
-export default Header
+export default HeaderComponent
